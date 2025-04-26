@@ -1,7 +1,143 @@
-.hero {
-    background-color: antiquewhite;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.second-title {
+    color: #2E2F42;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 72px;
+    text-align: center;
+
+}
+
+.thirt-title {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.text {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #2E2F42;
+    margin-right: 76px;
+}
+
+/* header */
+.header-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.header-tumb {
+    display: flex;
+    justify-content: space-between;
+}
+.header-tumb nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+}
+.nav-iteam:not(:last-child) {
+    margin-right: 40px;
+}
+
+.iteam-link {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.nav-contact-list {
+    display: flex;
+}
+.header-contact {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.nav-contact-list li:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* //////////////////hero//////////// */
+
+.hero {
+    background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.main-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+/* //////////tournaments /////////*/
+.tournaments {
+    background-color: #F4F4FD;
+}
+
+/* ////////players/////// */
+
+
+/* footer */
 footer {
    background-color: #2E2F42; 
 }
