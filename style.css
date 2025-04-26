@@ -73,7 +73,22 @@ p {
     margin-right: 76px;
 }
 
-/* header */
+.card-iteam {
+    width: calc((100% - 48px) / 3);
+}
+
+.card-iteam:not(:last-child) {
+    margin-right: 24px;
+}
+
+.iteam-tumb {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #E7E9FC;
+    padding: 32px 0;
+}
+
+/* ///////header ////////////*/
 .header-container {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -132,6 +147,9 @@ p {
 /* //////////tournaments /////////*/
 .tournaments {
     background-color: #F4F4FD;
+}
+.tournaments-list {
+    display: flex;
 }
 
 /* ////////players/////// */
