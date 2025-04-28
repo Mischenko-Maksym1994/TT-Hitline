@@ -49,7 +49,7 @@ p {
 
 }
 
-.thirt-title {
+.third-title {
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
@@ -154,11 +154,6 @@ p {
     display: flex;
 }
 
-.tournaments-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: revert;
-}
 
 .our-item-text {
     background-color: #fff;
@@ -183,6 +178,19 @@ p {
 .player-text {
     text-align: left;
 }
+
+/* //////////////tournaments */
+
+
+.table-box {
+    display: flex;
+}
+
+.table-box img:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* //////////////tournaments */
 
 /* footer */
 footer {
