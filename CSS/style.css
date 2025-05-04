@@ -63,7 +63,7 @@ p {
     font-weight: 500;
     font-size: 22px;
     line-height: 1.5;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .logo {
@@ -172,6 +172,13 @@ p {
 .player-iteam:nth-child(3n) {
     margin-right: 0;
 }
+
+.player-iteam:nth-child(1),
+.player-iteam:nth-child(2),
+.player-iteam:nth-child(3) {
+    margin-top: 0;
+}
+
 .player-tumb {
     padding: 10px;
 }
@@ -180,14 +187,40 @@ p {
 }
 
 /* //////////////tournaments */
-
+.tournament-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .table-box {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.table-box img:not(:first-child) {
-    margin-left: 20px;
+
+.table-box img {
+    flex-basis: calc((100% - 40px) / 2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.table-box img:nth-child(2n) {
+    margin-right: 0;
+}
+
+.table-box img:last-child {
+    margin-bottom: 0px;
+}
+
+
+/* player-points page 2*/
+.text-img {
+    display: flex;
+}
+
+.player-points {
+    margin: 20px auto;
 }
 
 /* //////////////tournaments */
