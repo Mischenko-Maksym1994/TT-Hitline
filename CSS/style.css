@@ -33,8 +33,8 @@ p {
 .container {
     max-width: 1158px;
     min-width: 320px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -43,7 +43,7 @@ p {
 .second-title {
     color: #2E2F42;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.11;
     margin-bottom: 72px;
     text-align: center;
@@ -62,10 +62,12 @@ p {
 .text {
     color: #434455;
     font-weight: 500;
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: 12px;
     line-height: 1.5;
     /* text-align: center; */
 }
+
 
 .logo {
     font-family: Raleway;
@@ -77,11 +79,7 @@ p {
 }
 
 .card-iteam {
-    width: calc((100% - 48px) / 3);
-}
-
-.card-iteam:not(:last-child) {
-    margin-right: 24px;
+    width: 100%;
 }
 
 .iteam-tumb {
@@ -89,6 +87,34 @@ p {
     border-style: solid;
     border-color: #E7E9FC;
     padding: 32px 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .second-title {
+        font-size: 36px;
+    }
+    .text {
+        font-size: 20px;
+    }
+
+    .card-iteam {
+        width: calc((100% - 24px) / 2);
+    }
+    
+    .card-iteam:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-iteam {
+    width: calc((100% - 48px) / 3);
+    }
 }
 
 /* ///////header ////////////*/
@@ -107,8 +133,12 @@ p {
 .nav-list {
     display: flex;
 }
-.nav-iteam:not(:last-child) {
-    margin-right: 40px;
+
+.nav-iteam:first-child {
+    margin-right: 10px;
+}
+.nav-iteam-castom {
+    display: none;
 }
 
 .iteam-link {
@@ -117,8 +147,11 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+.iteam-link:hover {
+    color: blue;
+}
 .nav-contact-list {
-    display: flex;
+    display: none;
 }
 .header-contact {
     color: #434455;
@@ -131,6 +164,20 @@ p {
     margin-right: 40px;
 }
 
+@media (min-width: 768px) {
+    
+    .nav-iteam:not(:last-child) {
+        margin-right: 40px;
+    }
+    
+    .nav-iteam-castom {
+        display: block;
+    }
+
+    .nav-contact-list {
+        display: flex;
+    }
+}
 /* //////////////////hero//////////// */
 
 .hero {
@@ -142,22 +189,34 @@ p {
 .main-title {
     color: #fff;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .main-title {
+    font-size: 56px;
+    }
+}
 /* //////////tournaments /////////*/
 .tournaments {
     background-color: #F4F4FD;
 }
 .tournaments-list {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-/* .tournaments-item {
-    border: 3px solid green;
-} */
+.tournaments-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tournaments-item:not(:last-child) {
+    margin-bottom: 20px;
+}
 
 .tournaments-item img:hover,
 .tournaments-item img:focus,
@@ -173,6 +232,20 @@ p {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+.tournaments-list {
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    .tournaments-item {
+        margin-bottom: 0;
+    }
+}
+
+/* @media (min-width: 1024px) {
+
+} */
 /* ////////players/////// */
 .players-list {
     display: flex;
@@ -210,35 +283,57 @@ p {
 
 .table-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
-
-.table-box img {
-    flex-basis: calc((100% - 40px) / 2);
-    margin-right: 20px;
+.table-box img:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.table-box img:nth-child(2n) {
-    margin-right: 0;
+@media (min-width: 1024px) {
+    .table-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .table-box img {
+        flex-basis: calc((100% - 40px) / 2);
+        margin-right: 20px;
+    }
+    
+    .table-box img:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    .table-box img:last-child {
+        margin-bottom: 0px;
+    }
 }
 
-.table-box img:last-child {
-    margin-bottom: 0px;
-}
-
-
-/* player-points page 2*/
+/* player-points page 3*/
 .text-img {
     display: flex;
+    flex-direction: column;
 }
 
 .player-points {
-    margin: 20px auto;
+    margin: 20px 40px 20px 0;
+}
+@media (max-width: 767px) {
+    .text-img img {
+        max-height: 400px;
+        
+    }
 }
 
-/* //////////////tournaments */
+@media (min-width: 768px) {
+    .text-img {
+        flex-direction: row;
+    }
+}
+/* //////////////tournaments 3*/
+
 
 /* footer */
 footer {
@@ -247,6 +342,10 @@ footer {
 .footer-logo {
     color: #fff;
 }
+.footer-conact-list {
+    display: block;
+}
+
 .footer-contact {
     color: #fff;
 }
