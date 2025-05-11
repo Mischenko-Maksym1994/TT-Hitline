@@ -32,6 +32,7 @@ p {
 
 .container {
     max-width: 1158px;
+    min-width: 320px;
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 15px;
@@ -154,10 +155,24 @@ p {
     display: flex;
 }
 
+/* .tournaments-item {
+    border: 3px solid green;
+} */
+
+.tournaments-item img:hover,
+.tournaments-item img:focus,
+.tournaments-item img:active {
+    border: 5px solid blue;
+}
 
 .our-item-text {
     background-color: #fff;
 }
+
+.description-text {
+    text-align: center;
+}
+
 /* ////////players/////// */
 .players-list {
     display: flex;
