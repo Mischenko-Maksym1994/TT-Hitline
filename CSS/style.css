@@ -249,22 +249,19 @@ p {
 /* ////////players/////// */
 .players-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .player-iteam {
     margin-top: 20px;
-    margin-right: 15px;
     border: 1px solid #2E2F42;
-    width: calc((100% - 40px) / 3);
-}
-.player-iteam:nth-child(3n) {
-    margin-right: 0;
 }
 
-.player-iteam:nth-child(1),
-.player-iteam:nth-child(2),
-.player-iteam:nth-child(3) {
+.player-iteam:nth-child(1) {
     margin-top: 0;
+}
+
+.player-iteam img {
+    height: 480px;
 }
 
 .player-tumb {
@@ -274,6 +271,39 @@ p {
     text-align: left;
 }
 
+@media (min-width: 768px) {
+    .players-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .player-iteam {
+        margin-right: 15px;
+        width: calc((100% - 20px) / 2);
+    }
+
+    .player-iteam:nth-child(1),
+    .player-iteam:nth-child(2) {
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .player-iteam {
+        width: calc((100% - 40px) / 3);
+        }
+    
+        .player-iteam:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .player-iteam:nth-child(1),
+        .player-iteam:nth-child(2),
+        .player-iteam:nth-child(3) {
+            margin-top: 0;
+        }
+}
 /* //////////////tournaments */
 .tournament-box {
     display: flex;
