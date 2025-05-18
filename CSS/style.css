@@ -355,6 +355,10 @@ p {
 }
 
 /* player-points page 3*/
+/* .img-Tournament {
+    padding: 15px;
+} */
+
 .text-img {
     display: flex;
     flex-direction: column;
@@ -365,8 +369,7 @@ p {
 }
 @media (max-width: 767px) {
     .text-img img {
-        max-height: 400px;
-        
+        max-width: 300px;
     }
 }
 
@@ -374,6 +377,10 @@ p {
     .text-img {
         flex-direction: row;
     }
+
+        .text-img img {
+            max-width: 600px;
+        }
 }
 /* //////////////tournaments 3*/
 
