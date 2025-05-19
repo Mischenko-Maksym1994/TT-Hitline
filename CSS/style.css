@@ -382,6 +382,17 @@ p {
             max-width: 600px;
         }
 }
+
+.random-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.result-group img {
+    margin: 0 auto;
+}
+
 /* //////////////tournaments 3*/
 
 
