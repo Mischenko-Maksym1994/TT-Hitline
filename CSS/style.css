@@ -388,11 +388,65 @@ p {
     flex-direction: row;
     justify-content: space-around;
 }
-
+/* /////////////////////// */
 .result-group img {
     margin: 0 auto;
 }
 
+.cups-box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.cups-box img {
+    margin: 0 auto;
+}
+
+.cup-little {
+    background-color: #fff;
+}
+
+.cups-players-tumb {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.preview-game {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-box {
+    margin-bottom: 40px;
+}
+
+.player-box {
+    flex-basis: calc((100% - 60px) / 2);
+}
+
+.player-box,
+.sets-item {
+    border: 1px solid black;
+}
+
+.sets-item {
+    text-align: center;
+}
+
+.player-box .player-name {
+    text-align: center;
+}
+
+.player-box-info {
+    padding: 10px;
+}
+
+.players-sets-points {
+    margin: auto 30px;
+}
+
+.sets-item {
+    padding: 10px;
+}
 /* //////////////tournaments 3*/
 
 
