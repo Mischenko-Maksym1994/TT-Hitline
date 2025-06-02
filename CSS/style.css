@@ -220,6 +220,7 @@ p {
 .tournaments-item {
     display: flex;
     flex-direction: column;
+    transition: transform 250ms ease-in-out;
 }
 
 .tournaments-item:not(:last-child) {
@@ -230,6 +231,7 @@ p {
 .tournaments-item img:focus,
 .tournaments-item img:active {
     border: 5px solid blue;
+    transform: scale(1.1);
 }
 
 .our-item-text {
@@ -268,6 +270,11 @@ p {
     overflow: hidden;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
     display: inline-block;
+    transition: transform 250ms ease-in-out;
+}
+
+.player-iteam:hover {
+    transform: scale(1.05);
 }
 
 .player-iteam:nth-child(1) {
