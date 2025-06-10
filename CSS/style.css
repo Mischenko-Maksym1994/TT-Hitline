@@ -78,6 +78,12 @@ p {
     margin-right: 76px;
 }
 
+.logo:hover,
+.logo:focus,
+.logo:active {
+    color: rgb(9, 106, 139);
+}
+
 .card-iteam {
     width: 100%;
 }
@@ -109,9 +115,7 @@ p {
     .text {
         font-size: 20px;
     }
-    .progress-second {
-        font-size: 20px;
-    }
+    
 
     .card-iteam {
         width: calc((100% - 24px) / 2);
@@ -195,6 +199,11 @@ p {
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+    url(/img/rewards.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title {
@@ -233,7 +242,7 @@ p {
 .tournaments-item img:hover,
 .tournaments-item img:focus,
 .tournaments-item img:active {
-    border: 5px solid blue;
+    border: 4px solid rgb(74, 74, 199);
     transform: scale(1.1);
 }
 
@@ -355,6 +364,10 @@ p {
     .player-iteam:nth-child(1),
     .player-iteam:nth-child(2) {
         margin-top: 0;
+    }
+
+    .progress-second {
+        font-size: 16px;
     }
 
 }
