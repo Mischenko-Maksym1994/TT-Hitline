@@ -45,7 +45,7 @@ p {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.11;
-    margin-bottom: 72px;
+    margin-bottom: 40px;
     text-align: center;
 
 }
@@ -105,13 +105,18 @@ p {
 
 @media (min-width: 768px) {
     .container {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .second-title {
         font-size: 36px;
     }
+
+    .third-title {
+        font-size: 32px;
+    }
+
     .text {
         font-size: 20px;
     }
@@ -342,10 +347,6 @@ p {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    /* .player-iteam img {
-        max-height: 480px;
-    } */
 }
 
 @media (min-width: 768px) {
@@ -388,6 +389,12 @@ p {
         }
 }
 /* //////////////tournaments */
+.tournament-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 .tournament-box {
     display: flex;
     flex-direction: column;
@@ -402,6 +409,17 @@ p {
 
 .table-box img:not(:last-child) {
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-img-Tournament {
+        width: 500px;
+    }
+
+    .tournament-img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -447,9 +465,11 @@ p {
         flex-direction: row;
     }
 
-        .text-img img {
-            max-width: 600px;
-        }
+    .text-img img {
+        max-width: 400px;
+        display: inline-block;
+        object-fit: contain;
+    }
 }
 
 .random-list {
@@ -458,8 +478,9 @@ p {
     justify-content: space-around;
 }
 /* /////////////////////// */
-.result-group img {
-    margin: 0 auto;
+.result-group {
+    display: block;
+    /* justify-content: space-around; */
 }
 
 .cups-box:not(:last-child) {
@@ -525,6 +546,36 @@ p {
 
 .sets-item-result {
     font-size:  26px;
+}
+
+@media (max-width: 767px) {
+    /* .result-tumb {
+        text-align: center;
+    } */
+
+    .result-group-img {
+        margin: 0 auto;
+    }
+    
+    .result-list .sets-item {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .result-group {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .result-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .result-item {
+        width: calc((100% - 20px) / 2);
+    }
 }
 /* //////////////tournaments 3*/
 
