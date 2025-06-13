@@ -542,6 +542,7 @@ p {
 
 .sets-item {
     padding: 5px;
+    font-size: 26px;
 }
 
 .sets-item-result {
@@ -573,9 +574,19 @@ p {
         justify-content: space-between;
     }
     
-    .result-item {
+    /* .result-item {
         width: calc((100% - 20px) / 2);
+    } */
+
+    .players-sets-points {
+        margin: auto 50px;
     }
+}
+
+@media (min-width: 1024px) {
+    .players-sets-points {
+            margin: auto 100px;
+        }
 }
 /* //////////////tournaments 3*/
 
