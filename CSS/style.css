@@ -133,7 +133,7 @@ p {
 
 @media (min-width: 1024px) {
     .card-iteam {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 4);
     }
 }
 
@@ -394,6 +394,11 @@ p {
     margin-bottom: 20px;
 }
 
+.tournament-img-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .tournament-box {
     display: flex;
@@ -419,6 +424,10 @@ p {
     .tournament-img {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    .tournament-img-group {
+        max-width: 450px;
     }
 }
 
@@ -476,6 +485,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.players-group {
+    padding-left: 15px;
 }
 /* /////////////////////// */
 .result-group {
