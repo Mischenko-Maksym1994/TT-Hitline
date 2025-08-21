@@ -574,10 +574,18 @@ p {
     font-size:  26px;
 }
 
+.result-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-list {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 767px) {
-    /* .result-tumb {
-        text-align: center;
-    } */
 
     .result-group-img {
         margin: 0 auto;
@@ -594,10 +602,10 @@ p {
         justify-content: space-around;
     }
     
-    .result-list {
+    /* .result-list {
         display: flex;
         justify-content: space-between;
-    }
+    } */
     
     /* .result-item {
         width: calc((100% - 20px) / 2);
