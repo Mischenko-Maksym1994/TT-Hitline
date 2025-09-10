@@ -492,7 +492,9 @@ p {
         object-fit: contain;
     }
 }
-
+.random-list_1 {
+    display: block;
+}
 .random-list {
     display: flex;
     flex-direction: row;
