@@ -516,6 +516,13 @@ p {
     justify-content: space-around;
 }
 
+.random-title {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 22px;
+    color: #5f5f8a;
+}
+
 .players-group {
     padding-left: 15px;
 }
@@ -524,6 +531,36 @@ p {
     display: block;
     /* justify-content: space-around; */
 }
+
+/* //////////result tournament list///////// */
+.result-tournament li {
+    border-left: 3px solid yellowgreen;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+
+.result-tournament li:nth-child(1),
+.result-tournament li:nth-child(2),
+.result-tournament li:nth-child(3),
+.result-tournament li:nth-child(4) {
+    border-left: 3px solid blue;
+}
+
+.result-tournament li:nth-child(5),
+.result-tournament li:nth-child(6),
+.result-tournament li:nth-child(7),
+.result-tournament li:nth-child(8),
+.result-tournament li:nth-child(23) {
+    border-left: 3px solid orangered;
+}
+
+.result-tournament li:nth-child(22) {
+    border-left: 3px solid blue;
+    margin-top: 20px;
+}
+
+
+/* //////////result tournament list end///////// */
 
 .cups-box:not(:last-child) {
     margin-bottom: 20px;
