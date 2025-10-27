@@ -19,6 +19,11 @@ img {
     max-width: 100%;
 }
 
+.img-info {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -101,6 +106,12 @@ p {
 
 .lose {
     color: red;
+}
+
+@media (max-width: 767px) {
+    .img-info {
+        max-width: 75%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -556,17 +567,55 @@ p {
 .result-tournament li:nth-child(5),
 .result-tournament li:nth-child(6),
 .result-tournament li:nth-child(7),
-.result-tournament li:nth-child(8),
-.result-tournament li:nth-child(23) {
+.result-tournament li:nth-child(8) {
     border-left: 3px solid orangered;
 }
 
-.result-tournament li:nth-child(22) {
+.result-tournament li:nth-last-child(2) {
+    border-left: 3px solid orangered;
+}
+
+.result-tournament li:nth-last-child(3) {
     border-left: 3px solid blue;
     margin-top: 20px;
 }
 
+.result-tournament-2 li {
+    border-left: 3px solid orangered;  
+}
 
+.result-tournament-2 li:nth-child(5),
+.result-tournament-2 li:nth-child(6) {
+    border-left: 3px solid blue;
+}
+
+.result-tournament-2 li:last-child {
+    border-left: 3px solid yellowgreen;
+}
+
+.result-tournament-3 li:nth-child(5),
+.result-tournament-3 li:nth-child(6) {
+    border-left: 3px solid blue;
+}
+
+.result-tournament-3 li:nth-child(7),
+.result-tournament-3 li:nth-child(8),
+.result-tournament-3 li:nth-child(9),
+.result-tournament-3 li:nth-child(10),
+.result-tournament-3 li:nth-child(11),
+.result-tournament-3 li:nth-child(12),
+.result-tournament-3 li:nth-child(13),
+.result-tournament-3 li:nth-child(14) {
+    border-left: 3px solid orangered;
+}
+
+.result-tournament-4 li:nth-child(6) {
+    border-left: 3px solid orangered;
+}
+
+.result-tournament-4 li:nth-child(14) {
+    border-left: 3px solid yellowgreen;
+}
 /* //////////result tournament list end///////// */
 
 .cups-box:not(:last-child) {
