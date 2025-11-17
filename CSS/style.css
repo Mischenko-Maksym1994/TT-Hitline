@@ -172,9 +172,14 @@ p {
     display: flex;
 }
 
-.nav-iteam:first-child {
+/* .nav-iteam:first-child {
+    margin-right: 10px;
+} */
+
+.nav-iteam:not(last-child) {
     margin-right: 10px;
 }
+
 .nav-iteam-castom {
     display: none;
 }
