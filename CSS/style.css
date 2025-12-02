@@ -549,6 +549,12 @@ p {
 .players-group {
     padding-left: 15px;
 }
+
+.players-group-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* /////////////////////// */
 .result-group {
     display: block;
