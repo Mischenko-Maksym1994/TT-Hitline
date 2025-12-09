@@ -637,6 +637,11 @@ p {
     margin: 0 auto;
 }
 
+.cups-box img:nth-child(2) {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 .cup-little {
     background-color: #fff;
 }
@@ -706,6 +711,8 @@ p {
     justify-content: space-around;
 }
 
+
+
 @media (max-width: 767px) {
 
     .result-group-img {
@@ -715,6 +722,7 @@ p {
     .result-list .sets-item {
         display: inline-block;
     }
+
 }
 
 @media (min-width: 768px) {
